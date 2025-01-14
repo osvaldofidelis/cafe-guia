@@ -66,7 +66,7 @@ body {
 .hero {
     height: 80vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                url('/cafe-guia/images/hero-bg.jpg') center/cover;
+                url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1500&q=80') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,17 +74,6 @@ body {
     color: var(--white);
     margin-top: 60px;
 }
-
-.hero-content {
-    max-width: 800px;
-    padding: 2rem;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
 /* Sections Gerais */
 .section {
     padding: 5rem 2rem;
@@ -100,12 +89,6 @@ body {
 }
 
 /* Cards */
-.cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
 .card {
     background: var(--white);
     padding: 2rem;
@@ -114,24 +97,26 @@ body {
     transition: transform 0.3s ease;
     background-size: cover;
     background-position: center;
+    min-height: 300px;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
 
 .card:nth-child(1) {
-    background-image: url('/cafe-guia/images/coffee-1.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                      url('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80');
 }
 
 .card:nth-child(2) {
-    background-image: url('/cafe-guia/images/coffee-2.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                      url('https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=80');
 }
 
 .card:nth-child(3) {
-    background-image: url('/cafe-guia/images/coffee-3.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                      url('https://images.unsplash.com/photo-1511537190424-bbbab1bb7c9d?auto=format&fit=crop&w=800&q=80');
 }
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
 /* Quality Section */
 .quality-container {
     display: grid;
